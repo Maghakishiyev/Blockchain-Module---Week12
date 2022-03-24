@@ -3,7 +3,7 @@ import { useWeb3React } from "@web3-react/core";
 import { InjectedConnector } from "@web3-react/injected-connector";
 import Image from "next/image";
 import logo from "../logo/Untitled.png";
-import Token from "./token";
+import Token from "../components/token";
 
 export const Home = () => {
   const injectedConnector = new InjectedConnector({

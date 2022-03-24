@@ -6,9 +6,6 @@ import Image from "next/image";
 import eth from "../logo/eth.png";
 
 export const Token = ({ disconnectWallet, chainId, account }) => {
-  if (window.ethereum === undefined) {
-    return;
-  }
   // States for displaying info
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const [readContract, setReadContract] = useState(null);
